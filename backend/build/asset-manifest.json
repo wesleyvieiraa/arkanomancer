@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9e741a2f.css",
+    "main.js": "/static/js/main.8698d40b.js",
+    "static/media/background_t20.jpg": "/static/media/background_t20.aba2c80fa852f975e983.jpg",
+    "static/media/bg_1.jpg": "/static/media/bg_1.699c0ee5dec45f83c843.jpg",
+    "static/media/Iowan_Old_Style_Regular.ttf": "/static/media/Iowan_Old_Style_Regular.77a90d58b657b4eb572d.ttf",
+    "static/media/Iowan_Old_Style_Bold.otf": "/static/media/Iowan_Old_Style_Bold.dcd890d1b044e6691cf7.otf",
+    "static/media/go3v2.ttf": "/static/media/go3v2.59287eb584ab9acf3e25.ttf",
+    "static/media/olho_grimorio.png": "/static/media/olho_grimorio.ceafab7be66fadb39107.png",
+    "static/media/Tormenta20.ttf": "/static/media/Tormenta20.e28f39e2bb033649f8f9.ttf",
+    "static/media/box.png": "/static/media/box.919596b9cb0e649ce479.png",
+    "index.html": "/index.html",
+    "main.9e741a2f.css.map": "/static/css/main.9e741a2f.css.map",
+    "main.8698d40b.js.map": "/static/js/main.8698d40b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e741a2f.css",
+    "static/js/main.8698d40b.js"
+  ]
+}
