@@ -29,12 +29,12 @@ class AppController {
   }
 
   routes() {
-    this.express.use("/api/v1", require("./routes/index-routes"));
-    this.express.use("/api/v1", require("./routes/login-routes"));
-    this.express.use("/api/v1/user", require("./routes/user-routes"));
-    this.express.use("/api/v1/spell", require("./routes/spell-routes"));
-    this.express.use("/api/v1/grimoire", require("./routes/grimoire-routes"));
-    this.express.use("/api/v1/grimoire-spell", require("./routes/grimoire-spell-routes"));
+    this.express.use("", require("./routes/index-routes"));
+    this.express.use("", require("./routes/login-routes"));
+    this.express.use("/user", require("./routes/user-routes"));
+    this.express.use("/spell", require("./routes/spell-routes"));
+    this.express.use("/grimoire", require("./routes/grimoire-routes"));
+    this.express.use("/grimoire-spell", require("./routes/grimoire-spell-routes"));
 
     /** React */
     this.express.get('/*', (req, res) => {
