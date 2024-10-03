@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Tormenta";
+  src: url("./assets/fonts/Tormenta20.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TormentaIOSB";
+  src: url("./assets/fonts/Iowan_Old_Style_Bold.otf");
+  font-weight: normal;
+  font-variant: small-caps;
+}
+
+@font-face {
+  font-family: "TormentaIOSR";
+  src: url("./assets/fonts/Iowan_Old_Style_Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TormentaGO";
+  src: url("./assets/fonts/go3v2.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
