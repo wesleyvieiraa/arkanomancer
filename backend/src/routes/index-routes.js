@@ -6,22 +6,22 @@ const { spells } = require("./spells");
 /* GET */
 router.get("/info", indexController.info);
 
-router.get("/teste", async (req, res) => {
-  try {
-    for await (const spell of spells.spells) {
-      const sql = 
-        `UPDATE spl.spell
-        SET resistance_id = (SELECT r.resistance_id FROM spl.resistance r WHERE upper(r."name") = upper('${spell.resistance}'))
-        WHERE UPPER(spell.name) = UPPER('${spell.name}');`;
+// router.get("/teste", async (req, res) => {
+//   try {
+//     for await (const spell of spells.spells) {
+//       const sql = 
+//         `UPDATE spl.spell
+//         SET resistance_id = (SELECT r.resistance_id FROM spl.resistance r WHERE upper(r."name") = upper('${spell.resistance}'))
+//         WHERE UPPER(spell.name) = UPPER('${spell.name}');`;
 
-        await pool.query(sql, []);
-    }
+//         await pool.query(sql, []);
+//     }
 
-    return res.status(200).send({msg: 'sql'});
-  } catch (error) {
-    return res.status(400).send({error: error.message});
-  }
-})
+//     return res.status(200).send({msg: 'sql'});
+//   } catch (error) {
+//     return res.status(400).send({error: error.message});
+//   }
+// })
 
 // router.get("/teste", async (req, res) => {
 //   try {

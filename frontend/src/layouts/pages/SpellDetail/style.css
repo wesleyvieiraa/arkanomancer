@@ -1,0 +1,11 @@
+.first-svg {
+  width: 100%; /* O primeiro SVG ocupa toda a largura do container */
+  height: auto; /* A altura é ajustada automaticamente */
+  position: absolute;
+}
+
+.second-svg {
+  width: 100%; /* O segundo SVG será 100% da largura do wrapper, que é 60% do container */
+  height: auto;
+  z-index: 1; /* Mantém o segundo SVG sobreposto */
+}

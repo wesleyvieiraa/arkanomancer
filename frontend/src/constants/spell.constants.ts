@@ -1,3 +1,7 @@
+export const SPELL_TYPE_ARCANE_ID: number = 1;
+export const SPELL_TYPE_DIVINE_ID: number = 2;
+export const SPELL_TYPE_UNIVERSAL_ID: number = 3;
+
 export const SCHOOL_ABJURATION_ID: number = 1;
 export const SCHOOL_DIVINATION_ID: number = 2;
 export const SCHOOL_CONVOCATION_ID: number = 3;
