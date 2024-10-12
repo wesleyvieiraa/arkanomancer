@@ -24,6 +24,12 @@
  * limitations under the License.
  */
 
+/*!
+ * content-type
+ * Copyright(c) 2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */
+
 /**
  * @license React
  * react-dom.production.min.js

@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e741a2f.css",
-    "main.js": "/static/js/main.0de20edd.js",
+    "main.css": "/static/css/main.e7a9f349.css",
+    "main.js": "/static/js/main.195aa733.js",
+    "static/media/bg-card-big.png": "/static/media/bg-card-big.0bc5d39632aea894260f.png",
     "static/media/background_t20.jpg": "/static/media/background_t20.aba2c80fa852f975e983.jpg",
     "static/media/bg_1.jpg": "/static/media/bg_1.699c0ee5dec45f83c843.jpg",
     "static/media/Iowan_Old_Style_Regular.ttf": "/static/media/Iowan_Old_Style_Regular.77a90d58b657b4eb572d.ttf",
@@ -9,13 +10,28 @@
     "static/media/go3v2.ttf": "/static/media/go3v2.59287eb584ab9acf3e25.ttf",
     "static/media/olho_grimorio.png": "/static/media/olho_grimorio.ceafab7be66fadb39107.png",
     "static/media/Tormenta20.ttf": "/static/media/Tormenta20.e28f39e2bb033649f8f9.ttf",
-    "static/media/box.png": "/static/media/box.919596b9cb0e649ce479.png",
+    "static/media/Universal-icon.svg": "/static/media/Universal-icon.04f09d114a976fe6a7be0e8b7914d3ab.svg",
+    "static/media/Arcana-icon.svg": "/static/media/Arcana-icon.740fcff5425f384662d093fa5bcd4a47.svg",
+    "static/media/Divina-icon.svg": "/static/media/Divina-icon.ee4013c42aba9db8b58be799d4e1a2df.svg",
+    "static/media/necromancia-icon.svg": "/static/media/necromancia-icon.ecff9e7ca2fb2cda78da1f7e9365164b.svg",
+    "static/media/transmutacao-icon.svg": "/static/media/transmutacao-icon.5cfb6999edf77fba5908036183db6dd5.svg",
+    "static/media/Ilusao-icon.svg": "/static/media/Ilusao-icon.46229cb23c38f72892c1dd18ab403b7b.svg",
     "index.html": "/index.html",
-    "main.9e741a2f.css.map": "/static/css/main.9e741a2f.css.map",
-    "main.0de20edd.js.map": "/static/js/main.0de20edd.js.map"
+    "static/media/convocacao-icon.svg": "/static/media/convocacao-icon.ec7d6597d1f45a394781b7e707069b1e.svg",
+    "static/media/evocacao-icon.svg": "/static/media/evocacao-icon.4355efb3ecf0d16a8ad7972644adb8c3.svg",
+    "static/media/Encantamento-icon.svg": "/static/media/Encantamento-icon.c5e9fb874a8db075839f26f0177df92b.svg",
+    "static/media/abjuracao-icon.svg": "/static/media/abjuracao-icon.f2e2bafc4fd231cee2803d2e377746ba.svg",
+    "static/media/duracao.svg": "/static/media/duracao.7da363da510a38410c6a17efaa1b90ad.svg",
+    "static/media/Adivinhacao-icon.svg": "/static/media/Adivinhacao-icon.7bd4e64da5699a467ba71ba2d1fe18be.svg",
+    "static/media/area.svg": "/static/media/area.2230c1297e9b1fd6cfc8fa2db5f87404.svg",
+    "static/media/resistencia.svg": "/static/media/resistencia.0c0459c8a2baa3c7f4bc1098207d3122.svg",
+    "static/media/alcance.svg": "/static/media/alcance.013d163fad94644916408804cbd87eb0.svg",
+    "static/media/execucao.svg": "/static/media/execucao.759e3fcfdb8fafd037e1f7b3b41fec00.svg",
+    "main.e7a9f349.css.map": "/static/css/main.e7a9f349.css.map",
+    "main.195aa733.js.map": "/static/js/main.195aa733.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e741a2f.css",
-    "static/js/main.0de20edd.js"
+    "static/css/main.e7a9f349.css",
+    "static/js/main.195aa733.js"
   ]
 }
