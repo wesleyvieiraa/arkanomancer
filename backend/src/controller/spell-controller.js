@@ -121,8 +121,8 @@ class SpellController {
 
       let resistances = [];
 
-      if (req.query.resistanceId) {
-        switch (req.query.resistanceId) {
+      if (Number(req.query.resistanceId)) {
+        switch (Number(req.query.resistanceId)) {
           case FORTITUDE_ID:
             resistances.push(
               FORTITUDE_PARTIAL_ID,
