@@ -129,7 +129,7 @@ export const SpellDetail = (): JSX.Element => {
 
     if (spell.areaId) {
       gridComponents.push(
-        <Grid item xs={8} sx={buildBorder(1)}>
+        <Grid item xs={12} sx={buildBorder(1)}>
           <MDBox display="flex" justifyContent="flex-start">
             <ReactSVG src={ar} style={{ width: isXs ? "4vw" : "1.5vw", fill: "#2C0606" }} />
             <MDTypography
@@ -152,7 +152,7 @@ export const SpellDetail = (): JSX.Element => {
 
     if (spell.target) {
       gridComponents.push(
-        <Grid item xs={8} sx={buildBorder(1)}>
+        <Grid item xs={12} sx={buildBorder(1)}>
           <MDBox display="flex" justifyContent="flex-start">
             <ReactSVG src={ar} style={{ width: isXs ? "4vw" : "1.5vw", fill: "#2C0606" }} />
             <MDTypography
