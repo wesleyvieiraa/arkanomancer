@@ -20,6 +20,7 @@ interface PropsList {
   areaId?: number;
   resistanceId?: number;
   publicationId?: number;
+  grimoireId?: number;
 }
 
 class SpellService {
@@ -61,6 +62,7 @@ class SpellService {
     query += filters.areaId ? `areaId=${filters.areaId}&` : "";
     query += filters.resistanceId ? `resistanceId=${filters.resistanceId}&` : "";
     query += filters.publicationId ? `publicationId=${filters.publicationId}&` : "";
+    query += filters.grimoireId ? `grimoireId=${filters.grimoireId}&` : "";
 
     query = query.substring(query.length - 1) == "&" ? query.substring(0, query.length - 1) : "";
     const response = await httpService.get(`${this.baseUrl}/list${query}`);

@@ -169,6 +169,7 @@ class SpellController {
           "resistanceId",
           "typeId",
           "schoolId",
+          "grimoireId",
         ],
         [],
         [],

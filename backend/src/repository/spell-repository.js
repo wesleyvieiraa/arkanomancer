@@ -207,6 +207,8 @@ class SpellRepository {
     userId
   ) {
     try {
+      const grimoireId = filterIdMap.get("grimoireId") || null;
+
       let sql = 
         `WITH spells AS (
           SELECT
@@ -235,6 +237,7 @@ class SpellRepository {
                 'description', si.description 
               ) 
             ) implements
+          ${grimoireId ? " , gs.prepared" : ""}
           FROM spl.spell s
           LEFT JOIN spl.execution e ON e.execution_id = s.execution_id
           LEFT JOIN spl."range" r ON r.range_id = s.range_id 
@@ -244,6 +247,7 @@ class SpellRepository {
           LEFT JOIN spl."type" t ON t.type_id = s.type_id 
           LEFT JOIN spl.school s2 ON s2.school_id = s.school_id
           LEFT JOIN spl.spell_implement si ON si.spell_id = s.spell_id 
+          $replaceJoinGrimoire
           GROUP BY 
             s.spell_id,
             s.circle,
@@ -256,6 +260,7 @@ class SpellRepository {
             a.area_id,
             t.type_id,
             s2.school_id
+            ${grimoireId ? " , gs.prepared" : ""}
           ORDER BY s.circle, s."name", s2."name"
         )
         SELECT * 
@@ -263,12 +268,23 @@ class SpellRepository {
         WHERE 1=1 $replaceFilterText $replaceFilterId $replaceFilterBool
         ORDER BY $replaceOrderColumn;`;
 
-      let keywords = filterTextMap.get("keywords") || null;
+      const keywords = filterTextMap.get("keywords") || null;
 
       if (keywords) {
         const splitedKeywords = keywords.split(";");
         sql = sql.replace("$replaceFilterText", ` AND (UPPER(name::varchar) LIKE ANY (ARRAY[${splitedKeywords.map((el) => `UPPER('%${el}%')`)}]) OR UPPER(description::varchar) LIKE ANY (ARRAY[${splitedKeywords.map((el) => `UPPER('%${el}%')`)}])) `);
         filterTextMap.delete("keywords");
+      }
+      
+      if (grimoireId) {
+        sql = sql.replace(
+          "$replaceJoinGrimoire", 
+          ` JOIN gre.grimoire g ON g.grimoire_id = ${grimoireId}
+          JOIN gre.grimoire_spell gs ON gs.grimoire_id = g.grimoire_id AND gs.spell_id = s.spell_id `
+        );
+        filterIdMap.delete("grimoireId");
+      } else {
+        sql = sql.replace("$replaceJoinGrimoire", "");
       }
 
       let customQuery = new PrepareSql().prepareCustomQuery(
